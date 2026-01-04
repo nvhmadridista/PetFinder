@@ -60,14 +60,14 @@ const CreatePost = () => {
 
   return (
     <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
-      <h1 className="text-2xl font-bold mb-6">Report a Pet</h1>
+      <h1 className="text-2xl font-bold mb-6">Report a pet</h1>
       
       {error && <div className="bg-red-100 text-red-700 p-3 rounded mb-4">{error}</div>}
 
       <form onSubmit={handleSubmit}>
         {/* Post Details */}
         <div className="mb-6">
-          <h2 className="text-xl font-semibold mb-4 border-b pb-2">Post Details</h2>
+          <h2 className="text-xl font-semibold mb-4 border-b pb-2">Post details</h2>
           
           <div className="mb-4">
             <label className="block text-gray-700 mb-2">Type</label>
@@ -144,7 +144,7 @@ const CreatePost = () => {
 
         {/* Pet Details */}
         <div className="mb-6">
-          <h2 className="text-xl font-semibold mb-4 border-b pb-2">Pet Details</h2>
+          <h2 className="text-xl font-semibold mb-4 border-b pb-2">Pet details</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="mb-4">

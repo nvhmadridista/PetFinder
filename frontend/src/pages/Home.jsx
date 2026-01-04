@@ -7,7 +7,7 @@ import { Search } from 'lucide-react';
 const Home = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [filter, setFilter] = useState('ALL'); // ALL, LOST, FOUND
+  const [filter, setFilter] = useState('ALL'); 
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -37,7 +37,6 @@ const Home = () => {
   return (
     <div>
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">Find Lost & Found Pets</h1>
         
         {/* Filters */}
         <div className="flex space-x-4 mb-6">
@@ -45,19 +44,19 @@ const Home = () => {
             onClick={() => setFilter('ALL')}
             className={`px-4 py-2 rounded-full ${filter === 'ALL' ? 'bg-indigo-600 text-white' : 'bg-white text-gray-600 border'}`}
           >
-            All Posts
+            All posts
           </button>
           <button 
             onClick={() => setFilter('LOST')}
             className={`px-4 py-2 rounded-full ${filter === 'LOST' ? 'bg-red-500 text-white' : 'bg-white text-gray-600 border'}`}
           >
-            Lost Pets
+            Lost pets
           </button>
           <button 
             onClick={() => setFilter('FOUND')}
             className={`px-4 py-2 rounded-full ${filter === 'FOUND' ? 'bg-green-500 text-white' : 'bg-white text-gray-600 border'}`}
           >
-            Found Pets
+            Found pets
           </button>
         </div>
 
@@ -67,7 +66,7 @@ const Home = () => {
         </div>
 
         {/* List View */}
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">Recent Posts</h2>
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">Recent posts</h2>
         {filteredPosts.length === 0 ? (
           <p className="text-gray-500">No posts found.</p>
         ) : (
